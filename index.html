@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/f7651c83f3.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <header > -->
+    <header class="bg-[#002713]">
+        <div class="mx-auto w-full max-w-screen-2xl  py-3 lg:py-4 px-5 md:px-6 lg:px-24">
+            <div class="sm:flex sm:items-center sm:justify-between text-center">
+                <span class="font-sans text-[#F9C148] text-base font-normal leading-4"><a href="https://flowbite.com/"
+                        class="hover:underline "></a>
+                    Welcome to Siratul Mustaqim
+                </span>
+              
+                <div class="mt-4 sm:mt-0 text-[#F9C148] font-sans text-base font-normal leading-4 text-center">
+                    <a href=""> Login | Language: ENG BANG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="w-full h-[585px] relative bg-cover bg-center mb-40 lg:mb-40 px-5 md:px-10 lg:px-20"
+        style="background-image: url('images/Illuminated\ ancient\ corridor\ leads\ to\ modern\ spirituality\ generated\ by\ ai-11.png')">
+        <div class="">
+            <nav class="flex justify-between items-center max-w-screen-2xl mx-auto mb-10">
+                <div class="flex mt-2">
+                    <img class="w-12 h-16 lg:w-full cursor-pointer" src="images/Siratul-Mustaqim-Final-Logo3 1.png"
+                        alt="...">
+                    <img class="w-36 h-14 lg:w-full cursor-pointer" src="images/Siratul-Mustaqim-Final-Logo3 2-1.png"
+                        alt="...">
+                </div>
+                <div
+                    class="bg-gray-500 md:bg-transparent lg:bg-transparent nav-links duration-500 md:static absolute md:min-h-fit min-h-[45vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    <ul class="flex justify-end md:flex-row flex-col md:items-center md:gap-[4vw] gap-4">
+                        <li>
+                            <a href="#" class="font-normal text-[#FFD67E]">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-normal text-[#FFFFFF]">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-normal text-[#FFFFFF]">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-normal text-[#FFFFFF]">Membership</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-normal text-[#FFFFFF]">Events</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-normal text-[#FFFFFF]">News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-normal text-[#FFFFFF]">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                    class="text-3xl cursor-pointer bg-yellow-400 md:hidden mr-5"></ion-icon>
+            </nav>
+
+            <div class="flex flex-col md:flex-row justify-between mt-10 max-w-screen-2xl mx-auto">
+                <div class="ml-10 md:ml-10 lg:ml-4">
+                    <div class="space-y-2 lg:space-y-5 mt-10 lg:mt-20">
+                        <h1 class="text-[#FFFFFF] font-serif font-medium text-4xl lg:text-6xl leading-[66px]">From Heart
+                            to Hand</h1>
+                        <p class="text-[#FFFFFF] font-sans font-normal tetx-sm lg:text-xl leading-10">Creating Impact
+                            One Step at a Time</p>
+                        <div>
+                            <button class="px-8 py-2 text-[#9D7010] bg-[#F9C148] rounded-full">READ MORE</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-[400px] lg:h-[450px]  bg-white rounded-lg shadow-lg p-10 mt-20 md:mt-40 mt-20 space-y-4 lg:mr-4">
+                    <h1 class="font-serif font-medium text-xl leading-6 mb-2 mt-2 lg:mt-4 uppercase not-italic">Donate
+                        Now</h1>
+                    <form>
+                        <div class="mt-2 lg:mt-3">
+                            <label for="Select Project"
+                                class="block text-sm sans-serif font-medium leading-8 text-[#000000] mb-1">Select
+                                Project</label>
+                        </div>
+                        <select id="countries"
+                            class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                            <option selected>Food Donation Program For Kids</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+
+                        <div class="mt-2 lg:mt-3">
+                            <label for="phone"
+                                class="block text-sm sans-serif font-medium leading-8 text-[#000000] mb-1">Phone/Email</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+88 01X XXX XXXX"
+                                class="border border-gray-300 rounded-full px-3 py-2 w-full text-sm">
+                        </div>
+                        <div class="mt-2 lg:mt-3">
+                            <label for="amount"
+                                class="block text-sm sans-serif font-medium leading-8 text-[#000000] mb-1">Donation
+                                Amount</label>
+                            <input type="number" id="amount" name="amount" placeholder="10000Tk"
+                                class="border border-gray-300 rounded-full px-3 py-2 w-full text-sm">
+                        </div>
+
+                        <button type="submit"
+                            class="w-full text-[#9D7010] bg-[#F9C148] px-3 py-2 rounded-full mt-4 lg:mt-8">Donate
+                            Now</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-80 md:mt-32 lg:mt-40">
+        <!-- section 01 -->
+        <section class="mt-12 lg:mt-36 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-20">
+            <div class="flex flex-col md:flex-row lg:flex-row">
+                <div class="w-full md:w-1/2 mb-10 md:mb-0 md:ml-12 lg:ml-12">
+                    <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3">
+                        <div class="mb-4 md:mb-4 w-full">
+                            <img class="md:w-[172px] md:h-[168px] md:w-[172px] md:h-[168px]"
+                                src="images/Rectangle 305.png" alt="" srcset="">
+
+                            <img class="lg:w-[172px] lg:h-[168px] mt-4 lg:mt-5" src="images/Rectangle 311.png" alt=""
+                                srcset="">
+                        </div>
+                        <div class="mb-4 md:mb-4 w-full mt-28">
+                            <img class="lg:w-[172px] lg:h-[168px]" src="images/Rectangle 305.png" alt="" srcset="">
+
+                            <img class="lg:w-[172px] lg:h-[168px] mt-4 lg:mt-5" src="images/Rectangle 311.png" alt=""
+                                srcset="">
+                        </div>
+                        <div class="mb-4 md:mb-4 w-full">
+                            <img class="lg:w-[172px] lg:h-[168px]" src="images/Rectangle 305.png" alt="" srcset="">
+
+                            <img class="lg:w-[172px] lg:h-[168px] mt-4 lg:mt-5" src="images/Rectangle 311.png" alt=""
+                                srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 md:-mt-12 lg:mt-4 lg:ml-12">
+                    <div class="p-10 md:p-10 ">
+                        <div class="flex items-center gap-3"> <!-- Center align items on smaller devices -->
+                            <img src="images/Siratul-Mustaqim-Final-Logo3 1.png" class="w-12 h-12" alt="" srcset="">
+                            <h4 class="font-serif font-medium text-3xl leading-7bnot-italic">About Us</h4>
+                        </div>
+                        <p class="font-sans font-light text-sm text-justify lg:text-base leading-7 mt-5 lg:mt-8">
+                            Welcome to Siratul Mustaqim Foundation, a voluntary, non-profitable, non-political,
+                            non-government, and charitable organization dedicated to serving humanity in accordance
+                            with Islamic principles. Established on June 2, 2023, our foundation aims to uplift
+                            communities, empower the underprivileged, and spread the message of peace and harmony.
+                            At Siratul Mustaqim, we believe in the power of education, compassion, and community
+                            support to create a better world for all.
+                        </p>
+                        <div class="mt-5 lg:mt-8">
+                            <button class="px-6 py-2 text-[#9D7010] bg-[#F9C148] rounded-full">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+        <section
+            class="w-full h-auto lg:h-[930px] relative bg-cover bg-center bg-no-repeat mt-20 md:mt-40 lg:mt-80 px-5 md:px-10 lg:px-20 bg-image"
+            style="background-image: url('images/Group\ 2.jpg');">
+            
+            <div class="max-w-screen-2xl mx-auto  flex justify-center items-center mt-10 lg:mt-20 lg:-mt-64">
+                <img class="absolute h-auto lg:h-[400px]"
+                    src="images/Illuminated ancient corridor leads to modern spirituality generated by ai.png" alt=""
+                    srcset="">
+                <div
+                    class="flex bg-[#007008] absolute -top-20 right-[20px] md:-top-32 lg:-top-48 md:right-4 lg:right-[160px] px-2 md:px-3 lg:px-4 py-1 rounded-full mt-10 gap-3">
+                    <img src="images/Checked.svg" alt="" srcset="">
+                    <h1 class=" text-xs leading-7 font-medium inset-x-0 bottom-0 text-[#FFFFFF]">FEATURED PROJECT</h1>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center">
+                <div
+                    class="max-w-screen-2xl h-auto lg:w-[720px] lg:h-[330px] bg-white rounded-lg shadow-lg space-y-5 relative mt-32">
+                    <div class="p-5">
+                        <div class="flex gap-3 mt-4 ml-2 lg:ml-10">
+                            <img src="images/Siratul-Mustaqim-Final-Logo3 1.png" class="w-12 h-12" alt="">
+                            <h4 class="font-serif font-medium text-3xl leading-8 mt-3 ">Siratul Mustaqim Complex</h4>
+                        </div>
+                        <p class="font-sans font-light text-base leading-7 mt-3 p-5 ml-1 lg:ml-7">Welcome to Siratul
+                            Mustaqim Foundation,
+                            a
+                            voluntary, non-profitable, non-political,
+                            non-government, and charitable organization dedicated to serving humanity in accordance
+                            with Islamic principles. Established on June 2, 2023,<span id="dots">...</span><span
+                                id="more" class="hidden">our foundation aims to uplift
+                                communities, empower the underprivileged, and spread the message of peace and
+                                harmony.
+                                At Siratul Mustaqim, we believe in the power of education, compassion, and community
+                                support to create a better world for all..</span></p>
+                        <div class="flex space-x-5 ml-1 lg:ml-10">
+                            <button onclick="myFunction()" id="myBtn"
+                                class="px-10 py-2 text-[#9D7010] bg-[#F9C148] rounded-full mt-5 font-sans text-sm font-medium leading-7">READ
+                                MORE
+                            </button>
+                            <div class="rounded-full border-2 mt-5 border-solid border-[#F9C148] w-[40px] h-[40px]">
+                                <i class="fa-solid fa-play h-8 px-[12px] mt-[10px] text-[#9D7010]"></i>
+                            </div>
+                            <a class="text-[#9D7010] font-sans mt-7 text-sm font-medium leading-7" href="">TAKE A
+                                TOUR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 lg:mt-60 ml-0 lg:ml-12 space-y-5">
+
+                    <div class="flex gap-2 lg:gap-5">
+                        <div>
+                            <img class="mt-5"
+                                src="images/Checked.svg" alt="" srcset="">
+                        </div>
+                        <p class="font-sans font-light text-base leading-7 text-[#FFFFFF]">Project related key details
+                            should be
+                            placed<br> in this section</p>
+                    </div>
+                    <div class="flex gap-2 lg:gap-5">
+                        <div>
+                            <img class="mt-5"
+                            src="images/Checked.svg" alt="" srcset="">
+                        </div>
+                        <p class="font-sans font-light text-base leading-7 text-[#FFFFFF]">Project related key details should be
+                            placed<br> in this section</p>
+                    </div>
+                    <div class="flex gap-2 lg:gap-5">
+                        <div>
+                            <img class="mt-5"
+                                src="images/Checked.svg" alt="" srcset="">
+                        </div>
+                        <p class="font-sans font-light text-base leading-7 text-[#FFFFFF]">Project related key details should be
+                            placed<br> in this section</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="max-w-screen-2xl mx-auto mt-10 px-5 md:px-10 lg:px-20">
+                <div class="space-y-3 p-5">
+                    <div class="flex items-center gap-3">
+                        <img src="images/Siratul-Mustaqim-Final-Logo3 1.png" class="w-12 h-12" alt="" srcset="">
+                        <h4 class="font-serif font-medium text-3xl leading-7 text-[#FFFFFF] ">Objectives of this Foundation</h4>
+                    </div>
+                    <p class="font-sans font-light text-base text-[#FFFFFF] leading-[30px] ">At Siratul Mustaqim Foundation we are committed
+                        to fulfilling the following<br> objectives to make a positive impact.</p>
+                </div>
+            </div>
+
+
+            <div class="max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-20">
+                <div id="animation-carousel" class="relative w-full" data-carousel="">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="relative w-full">
+                            <img class="rounded-lg w-full md:w-[350px] lg:w-[370px] h-[220px] object-cover"
+                                src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-5.png"
+                                alt="">
+                            <h1
+                                class="absolute inset-x-0 bottom-0 bg-[#F9C148] font-serif font-medium text-base md:text-lg lg:text-base leading-7 text-center py-3 rounded-bl-lg rounded-br-lg">
+                                Employment Opportunities</h1>
+                        </div>
+                        <div class="relative w-full">
+                            <img class="rounded-lg w-full md:w-[350px] lg:w-[370px] h-[220px] object-cover"
+                                src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-6.png"
+                                alt="">
+                            <h1
+                                class="absolute inset-x-0 bottom-0 bg-[#F9C148] font-serif font-medium text-base md:text-lg lg:text-base leading-7 text-center py-3 rounded-bl-lg rounded-br-lg">
+                                Employment Opportunities</h1>
+                        </div>
+                        <div class="relative w-full">
+                            <img class="rounded-lg w-full md:w-[350px] lg:w-[370px] h-[220px] object-cover"
+                                src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-7.png"
+                                alt="">
+                            <h1
+                                class="absolute inset-x-0 bottom-0 bg-[#F9C148] font-serif font-medium text-base md:text-lg lg:text-base leading-7 text-center py-3 rounded-bl-lg rounded-br-lg">
+                                Employment Opportunities</h1>
+                        </div>
+
+                        <div class="relative w-full">
+                            <img class="rounded-lg w-full md:w-[350px] lg:w-[370px] h-[220px] object-cover"
+                                src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-8.png"
+                                alt="">
+                            <h1
+                                class="absolute inset-x-0 bottom-0 bg-[#F9C148] font-serif font-medium text-base md:text-lg lg:text-base leading-7 text-center py-3 rounded-bl-lg rounded-br-lg">
+                                Employment Opportunities</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider controls placed outside of the carousel images -->
+
+                <button type="button"
+                    class="absolute top-[300px] start-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hidden md:hidden lg:flex">
+                    <span
+                        class="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-solid border-[#F9C148]">
+                        <svg class="w-4 h-4 text-[#F9C148] dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+
+                </button>
+
+                <button type="button"
+                    class="absolute top-[300px] end-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hidden md:hidden lg:flex"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-14 h-14 rounded-full  border-2 border-solid border-[#F9C148]">
+                        <svg class="w-4 h-4 text-[#F9C148] dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </section>
+
+
+
+        <!-- section 03 -->
+
+        <section class="max-w-screen-2xl mx-auto mt-4 md:mt-4 lg:mt-12 px-5 md:px-10 lg:px-16">
+            <div class="flex justify-between flex-col md:flex-col lg:flex-row">
+                <div class="space-y-3 p-5 md:p-10 lg:p-10">
+                    <div class="flex items-center gap-3 mt-16">
+                        <img src="images/Siratul-Mustaqim-Final-Logo3 1.png" class="w-12 h-12" alt="" srcset="">
+                        <h4 class="font-serif font-medium text-3xl leading-7">Objectives of this Foundation</h4>
+                    </div>
+                    <p class="font-sans font-light text-base leading-7">At Siratul Mustaqim Foundation we are committed
+                        to fulfilling the following<br> objectives to make a positive impact.</p>
+                    <a class="text-[#9D7010] font-sans text-sm font-medium leading-7">VIEW ALL PROJECTS</a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-5 md:p-10 ml-4 md:ml-12 lg:ml-0">
+                    <div class="lg:row-start-1 lg:row-span-2 shadow-2xl rounded-lg p-4 md:p-10 text-center">
+                        <img class="w-12 h-12 mx-auto mb-2" src="images/Heart.png" alt="" srcset="">
+                        <h1 class="font-sans font-bold text-lg md:text-2xl leading-7">200+</h1>
+                        <p class="font-sans text-xs text-[#000000] uppercase">Done Successfully</p>
+                    </div>
+                    <div class="lg:row-start-2 lg:row-span-2 shadow-2xl rounded-lg p-4 md:p-10 text-center">
+                        <img class="w-12 h-12 mx-auto mb-2" src="images/Home.png" alt="" srcset="">
+                        <h1 class="font-sans font-bold text-lg md:text-2xl leading-7">200+</h1>
+                        <p class="font-sans text-xs text-[#000000] uppercase">Done Successfully</p>
+                    </div>
+                    <div class="lg:row-start-1 lg:row-end-3 shadow-2xl rounded-lg p-4 md:p-10 text-center">
+                        <img class="w-12 h-12 mx-auto mb-2" src="images/Heart-1.png" alt="" srcset="">
+                        <h1 class="font-sans font-bold text-lg md:text-2xl leading-7">200+</h1>
+                        <p class="font-sans text-xs text-[#000000] uppercase">Done Successfully</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section 04 -->
+        <section class="mt-10 lg:mt-10 mb-10 px-5 md:px-10 lg:px-20">
+            <div class="w-full flex justify-center item-center md:max-w-screen-2xl mx-auto">
+                <img class="relative lg:w-[1500px] h-auto lg:h-[400px] left-[calc(50% - 1185px/2 + 0.5px)] top-[calc(50% - 392px/2 - 188.5px)]"
+                    src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-2.png" alt=""
+                    srcset="">
+                    <div class="absolute right-[140px] left-10 md:left-[80px] lg:left-[120px] mt-8 md:mt-32 lg:mt-64 px-4 py-5">
+                        <h1 class="inset-x-0 text-[#FFFFFF] font-serif text-xs lg:text-2xl font-medium leading-8">
+                            Food donation project in flood-affected <br>area of Rajshahi rural area</h1>
+                    </div>
+                    <!-- <div -top-20 right-[20px] md:-top-32 lg:-top-48 md:right-4 lg:right-[160px] -->
+                </div>
+            </div>
+        </section>
+
+        <!-- section 05 -->
+        <section class="max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-20">
+            <div class="grid grid-row-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="space-y-6 p-4 rounded-lg mt-5 hover:bg-gray-100 transition transform hover:scale-105">
+                    <img class="w-[480px] h-[260px]"
+                        src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-3.png"
+                        alt="" srcset="">
+                    <p class="font-serif text-[#000000] text-base font-semibold leading-7 ">Food donation project in
+                        flood
+                        effected areas of Rajshahi rural area.</p>
+                    <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL PROJECTS</a>
+                </div>
+                <div class="space-y-6 p-4 rounded-lg mt-5 hover:bg-gray-100 transition transform hover:scale-105">
+                    <img class="w-[480px] h-[260px]"
+                        src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-4.png"
+                        alt="" srcset="">
+                    <p class="font-serif text-[#000000] text-base font-semibold leading-7">Food donation project in
+                        flood
+                        effected areas of Rajshahi rural area.</p>
+                    <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL PROJECTS</a>
+                </div>
+                <div class="space-y-6 p-4 rounded-lg mt-5 hover:bg-gray-100 transition transform hover:scale-105">
+                    <img class="w-[480px] h-[260px]"
+                        src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-9.png"
+                        alt="" srcset="">
+                    <p class="font-serif text-[#000000] text-base font-semibold leading-7">Food donation project in
+                        flood
+                        effected areas of Rajshahi rural area.</p>
+                    <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL PROJECTS</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- section 06 -->
+
+        <section class="w-full lg:h-[400px] relative bg-cover bg-center bg-no-repeat mt-8 md:mt-16 lg:mt-20 bg-image"
+            style="background-image: url('images/bg-image.png');">
+            <div class="absolute inset-0 bg-[#F9C148] opacity-65"></div>
+
+            <div class="max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-20 ">
+                <div class="flex flex-col md:flex-row justify-between items-center relative">
+                    <div class="space-y-3 p-5 md:p-0 md:w-1/2 mt-0 lg:mt-20">
+                        <div class="flex items-center gap-3">
+                            <img src="images/Siratul-Mustaqim-Final-Logo3 1.png" class="w-12 h-12" alt="" srcset="">
+                            <h4 class="font-serif font-medium text-xl md:text-3xl leading-7 text-white">Events Update
+                            </h4>
+                        </div>
+                        <p class="font-sans font-light text-sm md:text-base leading-7 text-white">At Siratul Mustaqim
+                            Foundation we are committed to fulfilling the following objectives to make a positive
+                            impact.</p>
+                    </div>
+                    <div class="mt-6 md:mt-0 md:ml-8 md:w-1/2 md:flex md:justify-end">
+                        <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL EVENTS</a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                    <div class="space-y-6 p-4 rounded-lg transition transform hover:scale-105">
+                        <img class="w-full h-[260px] object-cover rounded-lg"
+                            src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-3.png"
+                            alt="">
+                        <p class="font-serif text-[#000000] text-sm md:text-base font-semibold leading-7">Food donation
+                            project in flood affected areas of Rajshahi rural area.</p>
+                        <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL PROJECTS</a>
+                    </div>
+                    <div class="space-y-6 p-4 rounded-lg transition transform hover:scale-105">
+                        <img class="w-full h-[260px] object-cover rounded-lg"
+                            src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-3.png"
+                            alt="">
+                        <p class="font-serif text-[#000000] text-sm md:text-base font-semibold leading-7">Food donation
+                            project in flood affected areas of Rajshahi rural area.</p>
+                        <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL PROJECTS</a>
+                    </div>
+                    <div class="space-y-6 p-4 rounded-lg transition transform hover:scale-105">
+                        <img class="w-full h-[260px] object-cover rounded-lg"
+                            src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-3.png"
+                            alt="">
+                        <p class="font-serif text-[#000000] text-sm md:text-base font-semibold leading-7">Food donation
+                            project in flood affected areas of Rajshahi rural area.</p>
+                        <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL PROJECTS</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!-- section 06 end -->
+
+
+        <!-- section 07 -->
+
+        <section class="mt-12 md:mt-12 lg:mt-72 flex justify-center px-5 md:px-10 lg:px-20">
+            <div class="max-w-screen-lg mx-auto">
+                <div class="space-y-3 p-5">
+                    <div class="flex items-center justify-center gap-3">
+                        <img src="images/Siratul-Mustaqim-Final-Logo3 1.png" class="w-12 h-12" alt="" srcset="">
+                        <h4 class="font-serif font-medium text-3xl leading-7">Our Gallery</h4>
+                    </div>
+                    <p class="font-sans font-light text-base leading-7 text-center">Stay updated with the latest
+                        insights, stories, and news related to our work <br> and the Islamic community.</p>
+                    <a href="#" class="text-[#9D7010] font-sans text-sm font-medium leading-7 block text-center">VIEW
+                        ALL PHOTOS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 08 -->
+
+        <section class="max-w-screen-2xl mx-auto mt-10 px-5 md:px-10 lg:px-20">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-2 lg:gap-x-2 gap-y-4 ">
+
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 305.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 311.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 312.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 313.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 314.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 315.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 311.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 305.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 305.png"
+                        alt="" srcset="">
+                </div>
+                <div class="w-full md:w-auto lg:w-auto transition transform hover:scale-105">
+                    <img class="ml-0 lg:ml-0 size-42 md:size-60 lg:size-64 bg-[#C6FFC7]" src="images/Rectangle 305.png"
+                        alt="" srcset="">
+                </div>
+            </div>
+        </section>
+
+        <!-- section 9 -->
+
+        <section class="mt-10 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-20">
+            <div class="flex justify-between">
+                <div class="flex items-center gap-3 p-5">
+                    <img src="images/Siratul-Mustaqim-Final-Logo3 1.png" class="w-12 h-12" alt="" srcset="">
+                    <h4 class="font-serif font-medium text-3xl leading-7">News Update</h4>
+                </div>
+
+                <div class="mt-10 mr-2 md:mr-20">
+                    <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL NEWS</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section 10 -->
+
+        <section>
+            <div class="max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-20 relative">
+                <!-- Carousel wrapper -->
+                <div id="animation-carousel" class="relative w-full" data-carousel="">
+                    <div class="grid grid-row-1 md:grid-cols-2 lg:grid-cols-3">
+                        <div
+                            class="space-y-6 p-4 rounded-lg mt-5 transition transform hover:scale-105">
+                            <img class="w-[480px] h-[260px]"
+                                src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-3.png"
+                                alt="" srcset="">
+                            <p class="font-serif text-[#000000] lg:text-[#FFFFFF] text-base font-medium leading-7">Food donation
+                                project
+                                in
+                                flood
+                                effected areas of Rajshahi rural area.</p>
+                            <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL
+                                PROJECTS</a>
+                        </div>
+                        <div
+                            class="space-y-6 p-4 rounded-lg mt-5 transition transform hover:scale-105">
+                            <img class="w-[480px] h-[260px]"
+                                src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-3.png"
+                                alt="" srcset="">
+                            <p class="font-serif text-[#000000] lg:text-[#FFFFFF] text-base font-medium leading-7">Food donation
+                                project
+                                in
+                                flood
+                                effected areas of Rajshahi rural area.</p>
+                            <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL
+                                PROJECTS</a>
+                        </div>
+                        <div
+                            class="space-y-6 p-4 rounded-lg mt-5 transition transform hover:scale-105">
+                            <img class="w-[480px] h-[260px]"
+                                src="images/Illuminated ancient corridor leads to modern spirituality generated by ai-3.png"
+                                alt="" srcset="">
+                            <p class="font-serif text-[#FFFFFF] text-base font-medium leading-7">Food donation
+                                project
+                                in
+                                flood
+                                effected areas of Rajshahi rural area.</p>
+                            <a href="#" class="font-sans text-xs font-medium text-[#9D7010] leading-7">VIEW ALL
+                                PROJECTS</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider controls placed outside of the carousel images -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hidden md:hidden lg:flex">
+                    <span
+                        class="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-solid border-[#F9C148]">
+                        <svg class="w-5 h-5 text-[#F9C148] dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+
+                </button>
+
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hidden md:hidden lg:flex "
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-14 h-14 rounded-full  border-2 border-solid border-[#F9C148]">
+                        <svg class="w-5 h-5 text-[#F9C148] dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="w-full h-[500px] -mt-64">
+                <img class="w-full h-full object-cover" src="images/Group 3.jpg" alt="" />
+            </div>
+            
+
+            <div class="relative flex justify-center items-center -mt-56">
+                <div class=" mx-auto w-[400px] lg:w-[720px] bg-white rounded-lg shadow-lg p-5">
+                    <div class="space-y-3 p-5 ml-5">
+                        <div class="flex justify-center gap-3 mt-5">
+                            <img src="images/Siratul-Mustaqim-Final-Logo3 1.png" class="w-12 h-12" alt="" srcset="">
+                            <h4 class="font-serif font-medium text-3xl leading-7 mt-3">Become a Volunteer</h4>
+                        </div>
+                        <p class="font-sans font-light text-justify text-base leading-7 mt-5"> Welcome to Siratul Mustaqim
+                            Foundation, a voluntary, non-profitable, non-political,
+                            non-government, and charitable organization dedicated to serving humanity in accordance
+                            with Islamic principles. Established on June 2, 2023,<span id="dots">...</span><span
+                                id="more" class="hidden">our foundation aims to uplift
+                                communities, empower the underprivileged, and spread the message of peace and
+                                harmony.
+                                At Siratul Mustaqim, we believe in the power of education, compassion, and community
+                                support to create a better world for all..</span></p>
+                        <div class="space-x-5 flex justify-center item-center">
+                            <button onclick="myFunction()" id="myBtn"
+                                class="px-8 py-2 text-[#9D7010] bg-[#F9C148] rounded-full mt-5 font-sans text-xs font-medium leading-7">APPLY
+                                NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-[500px] -mt-52 md:-mt-52 ">
+                <img class="w-full h-full object-cover" src="images/Rectangle 322.jpg" alt="" srcset="">
+                <div class="text-center -mt-64 md:-mt-60 space-y-3">
+                    <h1 class="text-4xl text-[#FFFFFF] font-medium leading-7"> هناك سبعة أيام في الأسبوع</h1>
+                    <h1 class="text-xl text-[#FFFFFF] font-medium leading-6">“Sadaqah Does not Decrease Wealth”</h1>
+                    <p class="font-sans text-[#FFE8B8] text-xs font-medium leading-[30px] ">SAHIH MUSLIM</p>
+                   
+                    <hr class="w-[80%] border-4 border-solid border-[#FFFFFF]">
+                    <!-- <hr class="h-px  bg-gray-200 border-2 dark:bg-gray-700"> -->
+
+                    <h1 class="font-sans text-[#FFE8B8] text-xs font-medium leading-[30px] py-7 uppercase">Terms and codition |
+                        Privacy Policy | About foundation | contact</h1>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="bg-white px-5 md:px-10 lg:px-20">
+            <div class="max-w-screen-2xl mx-auto p-4 py-4 md:py-5 lg:py-6">
+                <div class="sm:flex sm:items-center sm:justify-between text-center">
+                    <span class="text-xs text-[#002713] font-medium leading-7 sm:text-center uppercase"><a
+                            href="https://flowbite.com/" class="hover:underline"></a>ALL RIghts reserved by siratul
+                        mustaqim foundation
+                    </span>
+                    <div class="flex mt-4 sm:justify-center sm:mt-0">
+                        <a href="#" class="text-[#FFFFFF] dark:hover:text-white bg-[#000000] rounded-full">
+                            <svg class="w-[50px] h-[50px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="-2 -4 10 25">
+                                <path fill-rule="evenodd"
+                                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only ">Facebook page</span>
+                        </a>
+                        <a href="#" class="text-[#FFFFFF] dark:hover:text-white bg-[#000000] rounded-full ms-5">
+                            <svg class="w-[50px] h-[50px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="5 -8 8 35">
+                                <path
+                                    d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                            </svg>
+                            <span class="sr-only">Discord community</span>
+                        </a>
+                        <a href="#" class="text-[#FFFFFF] dark:hover:text-white bg-[#000000] rounded-full ms-5">
+                            <svg class="w-[50px] h-[50px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 -8 20 30">
+                                <path fill-rule="evenodd"
+                                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Twitter page</span>
+                        </a>
+                        <a href="#" class="text-[#FFFFFF] bg-[#000000] rounded-full ms-5">
+                            <svg class="w-[50px] h-[50px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">GitHub account</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'menu' : 'close'
+            navLinks.classList.toggle('top-[9%]')
+        }
+
+    </script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+
+</body>
+
+</html>
