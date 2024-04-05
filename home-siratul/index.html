@@ -40,7 +40,7 @@
                     <img src="home-images//Group 4.png" alt="" srcset="">
                 </div>
                 <div
-                    class="bg-gray-500 md:bg-transparent lg:bg-transparent nav-links duration-500 md:static absolute md:min-h-fit min-h-[45vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    class="bg-gray-500 md:bg-transparent lg:bg-transparent nav-links duration-500 md:static absolute md:min-h-fit min-h-[70vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                     <ul class="flex justify-end md:flex-row flex-col md:items-center md:gap-[4vw] gap-4">
                         <li>
                             <a href="#" class="font-normal text-[#FFD67E]">Home</a>
@@ -69,8 +69,9 @@
                     class="text-3xl cursor-pointer bg-yellow-400 md:hidden mr-5"></ion-icon>
             </div>
         </nav>
+        <!-- absolute transform -translate-x-1/2 -translate-y-1/2 -->
         <h1
-            class="font-serif font-medium text-[30px] md:text-[30px] lg:text-[43px] leading-[50px] text-white  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            class=" text-center font-medium text-[30px] md:text-[30px] lg:text-[43px] leading-[50px] text-white mt-36">
             Siratul Mustaqim Complex
         </h1>
     </header>
@@ -161,9 +162,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-
                             </div>
                         </div>
                     </div>
@@ -406,7 +404,7 @@
         const navLinks = document.querySelector('.nav-links')
         function onToggleMenu(e) {
             e.name = e.name === 'menu' ? 'menu' : 'close'
-            navLinks.classList.toggle('top-[10%]')
+            navLinks.classList.toggle('top-[0%]')
         }
 
     </script>
